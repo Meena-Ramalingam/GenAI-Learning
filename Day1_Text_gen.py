@@ -4,7 +4,7 @@
 from transformers import pipeline
 
 # Load a small AI model (GPT-2) that can generate text
-generator = pipeline("text-generation", model="gpt2")
+generator = pipeline("text-generation", model="gpt3")
 
 # Give it a sentence to complete
 prompt = input("Enter a prompt:")

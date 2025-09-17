@@ -20,7 +20,7 @@ sentences = [
 embeddings = model.encode(sentences)
 
 # 4) Ask a question
-query = "Pizza is from which country?"
+query = "mY NAME IS MEENA"
 query_embedding = model.encode([query])
 
 # 5) Find similarity between query and each sentence
@@ -36,12 +36,12 @@ print("\n=== Closest Match ===")
 print(best_match)
 # ...existing code...
 
-# 3) Encode each sentence into embeddings (numbers that represent meaning)
-embeddings = model.encode(sentences)
+# # 3) Encode each sentence into embeddings (numbers that represent meaning)
+# embeddings = model.encode(sentences)
 
-# Print embeddings for each sentence
-print("\n=== Sentence Embeddings ===")
-for sentence, embedding in zip(sentences, embeddings):
-    print(f"Sentence: {sentence}")
-    print(f"Embedding: {embedding}\n")
+# # Print embeddings for each sentence
+# print("\n=== Sentence Embeddings ===")
+# for sentence, embedding in zip(sentences, embeddings):
+#     print(f"Sentence: {sentence}")
+#     print(f"Embedding: {embedding}\n")
 
